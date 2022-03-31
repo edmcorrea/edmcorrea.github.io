@@ -1,7 +1,47 @@
 body{
     text-align: center;
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to bottom right, rgb(8, 39, 66), rgb(65, 105, 225));
 }
 
-a {
-    display: inline;
+p, h1, li, h2{
+    color: white;    
+}
+
+li a:hover:not(.active){
+    background-color: #111;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.nav-bar a:link,.nav-bar a:visited{
+    
+    padding: 14px 25px;    
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+#nav-ol{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-bar li{
+    list-style-type: none; 
+    float: left;   
+    text-align: justify;
+}
+
+.nav-bar ol{
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
