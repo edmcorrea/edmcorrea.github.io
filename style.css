@@ -11,7 +11,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to bottom right, rgb(8, 39, 66), rgb(65, 105, 225));
+    background-image: linear-gradient(to bottom right, rgb(71, 139, 199), rgb(44, 51, 71));
 }
 
 p, h1, li, h2{
@@ -29,6 +29,11 @@ a:hover{
     text-decoration: none;
 }
 
+.nav-bar{
+    position: fixed;
+    z-index: 1;
+}
+
 .nav-bar a:link,.nav-bar a:visited{
     
     padding: 14px 25px;    
@@ -43,12 +48,14 @@ a:hover{
     position: fixed;
     top: 0;
     width: 100%;
+    
 }
 
 .nav-bar li{
     list-style-type: none; 
     float: left;   
     text-align: justify;
+    
 }
 
 .nav-bar ol{
@@ -74,38 +81,78 @@ a:hover{
     z-index: 1;
     display: flex;
     align-items: center;
+    z-index: 0;
     
 }
 
 .hero-bg{
-    background-image: url(ed-dev.png);
+    margin: auto;
+    background-image: url("ed-dev.png");
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
-    width: 100%;
-    height: 700px;    
+    width: 95%;
+    height: 500px;    
+    padding: 10em 30px;
+    display: flex;
+    align-items: flex-start;
+    z-index: 0;
 }
 
-.hero-wrapper{    
-    position: relative;    
-    background: rgba(0, 0, 0, 0.60);
-    font-size: 1.5em;
-    color: white;
+.hero-wrapper{     
+    width: 50%;
+    text-align: left;
+    border-left: 6px solid white;
+    padding: 7px;
+    
     
 }
 
 .hero-content h2{
-    font-size: 1.5em;
+    padding-right: 7px;
+    background: rgba(0, 0, 0, 0.60);
+    font-size: 2.4em;
+    text-align: left;    
+    text-transform: uppercase;
     animation: fadeUp 0.5s ease 0.2s backwards;
 }
 
 .hero-content p{
-    font-size: 1em;
-    font-style: italic;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    padding-right: 7px;    
+    font-size: 1.5em;
+    background: rgba(0, 0, 0, 0.60);
+    font-style: italic;    
+    font-family: Georgia, "Times New Roman", Times, serif;    
 	animation: fadeUp 0.5s ease 0.8s backwards;    
 }
 
-.body-2{
-    display: inline-block;
+.habilidades-1{
+    margin: 20px 0;
+} 
+
+.habilidades li{
+    margin: 10px 0;
+}
+
+footer{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.linkedin, .github {
+    padding: 0 20px;
+}
+
+
+@keyframes fadeUp {
+	from {
+		opacity: 0;
+		transform: translateY(25px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
